@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 // import Home from './pages/Home';
 // import Announcements from './components/Announcements';
 import './App.css';
-import ProductList from './pages/ProductList';
+// import ProductList from './pages/ProductList';
+// import Product from './pages/Product';
+import Register from './pages/Register';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <ProductList />
+      <Register/>
       </div>
     );
   }

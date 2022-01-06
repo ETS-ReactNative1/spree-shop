@@ -1,15 +1,23 @@
-import React from 'react'
-import Nav from '../components/Nav';
-import Announcements from '../components/Announcements';
+import React from "react";
+import Nav from "../components/Nav";
+import Announcements from "../components/Announcements";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
+import styled from "styled-components";
 
-const FilterContainer = styled.div`
 
+const Container = styled.div`
 `;
 
+const Remove = styled.div`
+`;
+
+const Add = styled.div`
+`;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  ${'' /* ${mobile({ padding: "10px", flexDirection:"column" })} */}
+  ${"" /* ${mobile({ padding: "10px", flexDirection:"column" })} */}
 `;
 
 const ImgContainer = styled.div`
@@ -20,13 +28,13 @@ const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
-  ${'' /* ${mobile({ height: "40vh" })} */}
+  ${"" /* ${mobile({ height: "40vh" })} */}
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0px 50px;
-  ${'' /* ${mobile({ padding: "10px" })} */}
+  ${"" /* ${mobile({ padding: "10px" })} */}
 `;
 
 const Title = styled.h1`
@@ -47,7 +55,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
-  ${'' /* ${mobile({ width: "100%" })} */}
+  ${"" /* ${mobile({ width: "100%" })} */}
 `;
 
 const Filter = styled.div`
@@ -81,7 +89,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${'' /* ${mobile({ width: "100%" })} */}
+  ${"" /* ${mobile({ width: "100%" })} */}
 `;
 
 const AmountContainer = styled.div`
@@ -94,7 +102,7 @@ const Amount = styled.span`
   width: 30px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid teal;
+  border: 1px solid #023047;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,21 +111,21 @@ const Amount = styled.span`
 
 const Button = styled.button`
   padding: 15px;
-  border: 2px solid teal;
+  border: 2px solid #023047;
   background-color: white;
   cursor: pointer;
   font-weight: 500;
-  &:hover{
-      background-color: #f8f4f4;
+  &:hover {
+    background-color: #f8f4f4;
   }
 `;
 
 const Product = () => {
-    return (
-        <Container >
-        <Nav />
-        <Announcements />
-        <Wrapper>
+  return (
+    <Container>
+      <Nav />
+      <Announcements />
+      <Wrapper>
         <ImgContainer>
           <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
         </ImgContainer>
@@ -159,8 +167,10 @@ const Product = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-        </Container>
-    )
-}
+      <Newsletter />
+      <Footer />
+    </Container>
+  );
+};
 
-export default Product
+export default Product;
