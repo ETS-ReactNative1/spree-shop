@@ -6,7 +6,7 @@ import { Badge } from "@material-ui/core"
 
 const Container = styled.div`
     height: 60px;
-    background-color: purple;
+    background-color: #023047;
 `;
 
 const Wrapper = styled.div`
@@ -57,6 +57,7 @@ const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    color: lightgray;
 `
 const Nav = () => {
     return (
@@ -70,7 +71,7 @@ const Nav = () => {
                 </Left>
                 <Center>
                 <SearchContainer>
-                        <Input></Input>
+                        <Input> <input /></Input>
                         <AiIcons.AiOutlineSearch style={{color: "lightgrey", fontSize: 18}}/>
                     </SearchContainer>
                 </Center>
