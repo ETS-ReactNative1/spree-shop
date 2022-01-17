@@ -26,7 +26,7 @@ const Title = styled.h1`
 
 const Form = styled.form`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 const Input = styled.input`
@@ -36,15 +36,11 @@ const Input = styled.input`
   padding: 10px;
 `;
 
-const Agreement = styled.span`
-  font-size: 12px;
-  margin: 20px 0px;
-`;
-
 const Button = styled.button`
   width: 30%;
   border-radius: 10px;
   margin: 0 auto;
+  margin-top: 10px;
   border: none;
   padding: 15px 20px;
   background-color: #023047;

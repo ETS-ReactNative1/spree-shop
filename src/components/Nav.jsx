@@ -38,11 +38,15 @@ const SearchContainer = styled.div`
     display: flex;
     align-items: center;
     margin-left: 25px;
-    padding: 5px
+    padding: 5px;
+    background-color: white;
 `
 
-const Input = styled.div`
+
+const Input = styled.input`
     border: none;
+    flex: 8;
+  padding-left: 20px;
 `
 
 const Logo = styled.div`
@@ -59,6 +63,18 @@ const MenuItem = styled.div`
     margin-left: 25px;
     color: lightgray;
 `
+
+const Button = styled.button`
+  flex: 1;
+  border: none;
+  background-color: #1d3557;
+  color: white;
+`;
+
+// const input = styled.input `
+//  width: 50px;
+// `
+
 const Nav = () => {
     return (
         <Container>
@@ -71,8 +87,11 @@ const Nav = () => {
                 </Left>
                 <Center>
                 <SearchContainer>
-                        <Input> <input /></Input>
+                        <Input />
                         <AiIcons.AiOutlineSearch style={{color: "lightgrey", fontSize: 18}}/>
+                        {/* <Button>
+                            search
+                        </Button> */}
                     </SearchContainer>
                 </Center>
                 <Right>
