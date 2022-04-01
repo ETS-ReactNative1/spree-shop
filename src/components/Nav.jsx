@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import * as AiIcons from "react-icons/ai"
 import * as TiIcons from "react-icons/ti"
 import { Badge } from "@material-ui/core"
+import { Link } from "react-router-dom"
+import "../App.css"
 
 const Container = styled.div`
     height: 60px;
@@ -64,12 +66,6 @@ const MenuItem = styled.div`
     color: lightgray;
 `
 
-const Button = styled.button`
-  flex: 1;
-  border: none;
-  background-color: #1d3557;
-  color: white;
-`;
 
 // const input = styled.input `
 //  width: 50px;
@@ -96,15 +92,17 @@ const Nav = () => {
                 </Center>
                 <Right>
                     <MenuItem>
-                        REGISTER
+                        <Link to="/register" >Register</Link> 
                     </MenuItem>
                     <br/>
                     <MenuItem>
-                        LOGIN
+                        <Link to="/login">login</Link>
                     </MenuItem>
                     <MenuItem>
                         <Badge badgeContent={0} color="primary">
+                            <Link to="/cart">
                             <TiIcons.TiShoppingCart />
+                            </Link>
                         </Badge> 
                     </MenuItem>
                 </Right>

@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { useLocation } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { publicRequest } from "../requestMethods";
-import { ContactSupportOutlined } from "@material-ui/icons";
+// import { ContactSupportOutlined } from "@material-ui/icons";
 
 
 const Container = styled.div`
